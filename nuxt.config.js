@@ -41,6 +41,12 @@ module.exports = {
     '~/plugins/moment'
   ],
   /*
+  ** CSS
+  */
+  css: [
+    { src: '~/assets/app.scss', lang: 'scss' },
+  ],
+  /*
   ** modules
   */
   modules: [

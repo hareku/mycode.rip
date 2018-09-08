@@ -33,7 +33,7 @@
   list-style-type: square;
 
   > li {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
   }
 }
 </style>
