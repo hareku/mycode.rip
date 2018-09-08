@@ -1,0 +1,34 @@
+{
+  "name": "mycode.rip",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "hareku <hareku908@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/google-analytics": "^2.0.2",
+    "@nuxtjs/sitemap": "^0.1.1",
+    "contentful": "^7.0.3",
+    "cross-env": "^5.2.0",
+    "html2plaintext": "^2.0.1",
+    "markdown-it": "^8.4.2",
+    "moment": "^2.22.2",
+    "node-sass": "^4.9.3",
+    "nuxt": "^1.0.0",
+    "sass-loader": "^7.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0"
+  }
+}
