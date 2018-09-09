@@ -9,16 +9,22 @@ import PostContent from '~/components/PostContent'
 export default {
   components: { PostContent },
 
-  async asyncData ({ app, params }) {
-    const posts = await app.$contentful.getEntries({
-      content_type: 'post',
-      'fields.slug[in]': params.slug,
-      limit: 1
-    })
+  asyncData ({ app, params, error }) {
+    return app.$contentful.getEntries({
+        content_type: 'post',
+        'fields.slug[in]': params.slug,
+        limit: 1
+      }).then(entries => {
+        if (entries.items.length === 0) {
+          return error({ statusCode: 404 })
+        }
 
-    return {
-      post: posts.items[0]
-    }
+        return {
+          post: entries.items[0]
+        }
+      }).catch(error => {
+        return error({ statusCode: 500 })
+      })
   },
 
   head () {
