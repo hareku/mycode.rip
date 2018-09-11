@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <time :datetime="post.sys.createdAt">{{ displayCreatedAt }}</time>
+      <time :datetime="post.sys.updatedAt">{{ displayUpdatedAt }}</time>
     </div>
 
     <h1>{{ post.fields.title }}</h1>
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import moment from '~/plugins/moment'
+import dateformat from 'dateformat'
 import AboutMe from './AboutMe'
 
 export default {
@@ -28,8 +28,8 @@ export default {
   },
 
   computed: {
-    displayCreatedAt () {
-      return moment(this.post.sys.createdAt).format('YYYY-MM-DD')
+    displayUpdatedAt () {
+      return dateformat(new Date(this.post.sys.updatedAt), 'yyyy-mm-dd')
     },
 
     renderedContent () {

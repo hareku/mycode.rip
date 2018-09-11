@@ -37,8 +37,7 @@ module.exports = {
   */
   plugins: [
     '~/plugins/contentful',
-    '~/plugins/markdown-it',
-    '~/plugins/moment'
+    '~/plugins/markdown-it'
   ],
   /*
   ** CSS
@@ -66,6 +65,12 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    /*
+    ** Vendor
+    */
+    vendor: [
+      'dateformat'
+    ],
     /*
     ** Run ESLint on save
     */

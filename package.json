@@ -17,6 +17,7 @@
     "@nuxtjs/sitemap": "^0.1.1",
     "contentful": "^7.0.3",
     "cross-env": "^5.2.0",
+    "dateformat": "^3.0.3",
     "html2plaintext": "^2.0.1",
     "markdown-it": "^8.4.2",
     "moment": "^2.22.2",
