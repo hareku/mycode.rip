@@ -15,7 +15,10 @@ export default {
   components: { IndexPost, AboutMe },
 
   async asyncData ({ app }) {
-    const posts = await app.$contentful.getEntries().then(({ items }) => items)
+    const posts = await app.$contentful.getEntries({
+        order: '-sys.createdAt'
+      })
+      .then(({ items }) => items)
 
     return { posts }
   },

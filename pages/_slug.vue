@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import strLimit from '~/utils/str-limit'
 import h2p from 'html2plaintext'
 import PostContent from '~/components/PostContent'
 
@@ -28,7 +29,7 @@ export default {
   },
 
   head () {
-    const description = h2p(this.$md.render(this.post.fields.content)).replace(/\r?\n/g, '')
+    const description = strLimit(h2p(this.$md.render(this.post.fields.content)).replace(/\r?\n/g, ''), 400)
 
     return {
       title: this.post.fields.title,
