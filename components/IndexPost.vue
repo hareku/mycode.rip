@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div>
-      <time :datetime="post.sys.updatedAt">{{ displayUpdatedAt }}</time>
+    <div class="post-date">
+      <time :datetime="post.sys.createdAt">{{ displayCreatedAt }}</time>
     </div>
 
     <h1>
-      <nuxt-link :to="{ name: 'slug', params: { slug: post.fields.slug }}">{{ post.fields.title }}</nuxt-link>
+      <nuxt-link :to="{ name: 'slug', params: { slug: post.fields.slug }}" class="post-title">{{ post.fields.title }}</nuxt-link>
     </h1>
   </div>
 </template>
@@ -22,8 +22,8 @@ export default {
   },
 
   computed: {
-    displayUpdatedAt () {
-      return dateformat(new Date(this.post.sys.updatedAt), 'yyyy-mm-dd')
+    displayCreatedAt () {
+      return dateformat(new Date(this.post.sys.createdAt), 'yyyy-mm-dd')
     },
 
     renderedContent () {
@@ -32,3 +32,13 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.post-title {
+  color: inherit;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+</style>
