@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <time :datetime="post.sys.updatedAt">{{ displayUpdatedAt }}</time>
+      <time :datetime="post.sys.createdAt">{{ displayCreatedAt }}</time>
     </div>
 
     <h1>{{ post.fields.title }}</h1>
@@ -28,8 +28,8 @@ export default {
   },
 
   computed: {
-    displayUpdatedAt () {
-      return dateformat(new Date(this.post.sys.updatedAt), 'yyyy-mm-dd')
+    displayCreatedAt () {
+      return dateformat(new Date(this.post.sys.createdAt), 'yyyy-mm-dd')
     },
 
     renderedContent () {
