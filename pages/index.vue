@@ -14,13 +14,21 @@ import AboutMe from '~/components/AboutMe'
 export default {
   components: { IndexPost, AboutMe },
 
-  async asyncData ({ app }) {
-    const posts = await app.$contentful.getEntries({
-        order: '-sys.createdAt'
-      })
-      .then(({ items }) => items)
+  asyncData ({ app }) {
+    const select = [
+      'sys.createdAt',
+      'fields.title',
+      'fields.slug'
+    ]
 
-    return { posts }
+    return app.$contentful.getEntries({
+        content_type: 'post',
+        order: '-sys.createdAt',
+        select: select.join(',')
+      })
+      .then(({ items }) => {
+        return { posts: items }
+      })
   },
 
   head () {

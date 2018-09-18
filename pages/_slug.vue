@@ -11,18 +11,24 @@ export default {
   components: { PostContent },
 
   asyncData ({ app, params, error }) {
+    const select = [
+      'sys.createdAt',
+      'fields.title',
+      'fields.slug',
+      'fields.content'
+    ]
+
     return app.$contentful.getEntries({
         content_type: 'post',
-        'fields.slug[in]': params.slug,
+        select: select.join(','),
+        'fields.slug': params.slug,
         limit: 1
       }).then(entries => {
         if (entries.items.length === 0) {
           return error({ statusCode: 404 })
         }
 
-        return {
-          post: entries.items[0]
-        }
+        return { post: entries.items[0] }
       }).catch(error => {
         return error({ statusCode: 500 })
       })

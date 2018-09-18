@@ -104,9 +104,13 @@ module.exports = {
     cacheTime: 1000 * 60 * 15, // 15 minutes
     generate: true,
     routes () {
-      return contentfulClient.getEntries().then(({ items }) => {
-        return items.map(post => `/${post.fields.slug}`)
-      })
+      return contentfulClient.getEntries({
+          content_type: 'post',
+          select: 'fields.slug'
+        })
+        .then(({ items }) => {
+          return items.map(post => `/${post.fields.slug}`)
+        })
     }
   }
 }
