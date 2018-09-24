@@ -4,7 +4,7 @@
       <div class="site-title">
         <nuxt-link :to="{ name: 'index' }" exact class="site-title__link">MyCode.rip</nuxt-link>
       </div>
-      <div class="site-description">Webエンジニアのブログ</div>
+      <div class="site-description grey-text">Webエンジニアのブログ</div>
     </header>
 
     <main class="main">
@@ -41,7 +41,6 @@
 
 .site-description {
   margin-top: 5px;
-  color: #abb4b7;
   text-align: center;
 }
 
