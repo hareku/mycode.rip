@@ -26,8 +26,11 @@ export default {
         order: '-sys.createdAt',
         select: select.join(',')
       })
-      .then(({ items }) => {
-        return { posts: items }
+      .then(({ items, includes }) => {
+        return {
+          posts: items,
+          includes
+        }
       })
   },
 

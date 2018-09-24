@@ -1,5 +1,5 @@
 <template>
-  <PostContent :post="post"/>
+  <PostContent :post="post" :includes="includes"/>
 </template>
 
 <script>
@@ -15,7 +15,8 @@ export default {
       'sys.createdAt',
       'fields.title',
       'fields.slug',
-      'fields.content'
+      'fields.content',
+      'fields.category',
     ]
 
     return app.$contentful.getEntries({
@@ -23,12 +24,15 @@ export default {
         select: select.join(','),
         'fields.slug': params.slug,
         limit: 1
-      }).then(entries => {
-        if (entries.items.length === 0) {
+      }).then(({ items, includes }) => {
+        if (items.length === 0) {
           return error({ statusCode: 404 })
         }
 
-        return { post: entries.items[0] }
+        return {
+          post: items[0],
+          includes
+        }
       }).catch(error => {
         return error({ statusCode: 500 })
       })
