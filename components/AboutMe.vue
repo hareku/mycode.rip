@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="profile-head">About me</div>
-    <div class="profile-body">名古屋でWebエンジニアやっています。</div>
+    <div class="profile-body">名古屋の自称Webエンジニア</div>
 
     <ul class="profile-links">
       <li>
