@@ -8,11 +8,11 @@ Terraform: https://github.com/hareku/mycode.rip-terraform
 
 ``` bash
 # install dependencies
-$ npm install # Or yarn install
+$ yarn install
 
 # serve with hot reload at localhost:3000
-$ cross-env CTF_SPACE_ID=xxxxx CTF_CDA_ACCESS_TOKEN=xxxxx npm run dev
+$ cross-env CTF_SPACE_ID=xxxxx CTF_CDA_ACCESS_TOKEN=xxxxx yarn run dev
 
 # generate static project
-$ npm run generate
+$ yarn run generate
 ```
