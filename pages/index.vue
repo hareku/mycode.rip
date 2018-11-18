@@ -1,6 +1,6 @@
 <template>
   <div>
-    <IndexPost v-for="post in posts" :key="post.sys.id" :post="post"/>
+    <IndexPost v-for="post in posts" :key="post.sys.id" :post="post" class="index-post"/>
 
     <hr />
     <AboutMe/>
@@ -41,3 +41,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.index-post {
+  margin-top: 12px;
+}
+</style>
