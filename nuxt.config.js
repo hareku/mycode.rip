@@ -1,4 +1,4 @@
-const contentful = require('contentful')
+import contentful from 'contentful'
 const contentfulClient = contentful.createClient({
   space: process.env.CTF_SPACE_ID,
   accessToken: process.env.CTF_CDA_ACCESS_TOKEN
@@ -66,12 +66,6 @@ module.exports = {
   */
   build: {
     /*
-    ** Vendor
-    */
-    vendor: [
-      'dateformat'
-    ],
-    /*
     ** Run ESLint on save
     */
     extend (config, { isDev, isClient }) {
@@ -80,7 +74,10 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
+          options: {
+            fix: true
+          }
         })
       }
     }
