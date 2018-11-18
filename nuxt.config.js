@@ -3,6 +3,15 @@ const contentfulClient = contentful.createClient({
   space: process.env.CTF_SPACE_ID,
   accessToken: process.env.CTF_CDA_ACCESS_TOKEN
 })
+const getRoutes = () => {
+  return contentfulClient.getEntries({
+      content_type: 'post',
+      select: 'fields.slug'
+    })
+    .then(({ items }) => {
+      return items.map(post => `/${post.fields.slug}`)
+    })
+}
 
 module.exports = {
   /*
@@ -87,11 +96,7 @@ module.exports = {
   */
   generate: {
     fallback: '404.html',
-    routes () {
-      return contentfulClient.getEntries().then(({ items }) => {
-        return items.map(post => `/${post.fields.slug}`)
-      })
-    }
+    routes: getRoutes
   },
   /*
   ** @nuxtjs/sitemap configuration
@@ -100,14 +105,6 @@ module.exports = {
     hostname: 'https://mycode.rip',
     cacheTime: 1000 * 60 * 15, // 15 minutes
     generate: true,
-    routes () {
-      return contentfulClient.getEntries({
-          content_type: 'post',
-          select: 'fields.slug'
-        })
-        .then(({ items }) => {
-          return items.map(post => `/${post.fields.slug}`)
-        })
-    }
+    routes: getRoutes
   }
 }
