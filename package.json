@@ -20,7 +20,6 @@
     "dateformat": "^3.0.3",
     "html2plaintext": "^2.0.1",
     "markdown-it": "^8.4.2",
-    "moment": "^2.22.2",
     "node-sass": "^4.9.3",
     "nuxt": "^2.2.0",
     "sass-loader": "^7.1.0"
