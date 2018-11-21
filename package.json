@@ -11,7 +11,7 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix .",
     "precommit": "npm run lint",
-    "deploy": "s3-safety-deploy --bucket mycode.rip --uploadDir ./ --deletePattern *.html"
+    "deploy": "s3-safety-deploy --bucket mycode.rip --uploadDir ./dist --deletePattern *.html"
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",

@@ -3356,13 +3356,9 @@ icss-utils@^2.1.0:
   dependencies:
     postcss "^6.0.1"
 
-ieee754@1.1.8:
+ieee754@1.1.8, ieee754@^1.1.4:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.1.8.tgz#be33d40ac10ef1926701f6f08a2d86fbfd1ad3e4"
-
-ieee754@^1.1.4:
-  version "1.1.12"
-  resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.1.12.tgz#50bf24e5b9c8bb98af4964c941cdb0918da7b60b"
 
 iferr@^0.1.5:
   version "0.1.5"
@@ -5832,8 +5828,8 @@ rxjs@^6.1.0:
     tslib "^1.9.0"
 
 s3-safety-deploy@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/s3-safety-deploy/-/s3-safety-deploy-0.1.0.tgz#880281814f310d31542a3cd7f3242c4c60bbe1a2"
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/s3-safety-deploy/-/s3-safety-deploy-0.1.1.tgz#855529a5cef13c0f8ecc1fc177e83c863108b10c"
   dependencies:
     aws-sdk "^2.353.0"
     consola "^2.2.4"
@@ -5876,11 +5872,11 @@ sass-loader@^7.1.0:
     pify "^3.0.0"
     semver "^5.5.0"
 
-sax@1.2.1:
+sax@1.2.1, sax@>=0.6.0:
   version "1.2.1"
   resolved "http://registry.npmjs.org/sax/-/sax-1.2.1.tgz#7b8e656190b228e81a66aea748480d828cd2d37a"
 
-sax@>=0.6.0, sax@^1.2.4, sax@~1.2.4:
+sax@^1.2.4, sax@~1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
 
