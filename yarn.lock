@@ -5827,9 +5827,9 @@ rxjs@^6.1.0:
   dependencies:
     tslib "^1.9.0"
 
-s3-safety-deploy@^0.1.0:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/s3-safety-deploy/-/s3-safety-deploy-0.1.2.tgz#352909baebde9fe4d9df167c5b1703dd7070fb87"
+s3-safety-deploy@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/s3-safety-deploy/-/s3-safety-deploy-0.2.0.tgz#68ab7c25d712a966199166a5e2c8e8b8439dd562"
   dependencies:
     aws-sdk "^2.353.0"
     consola "^2.2.4"
