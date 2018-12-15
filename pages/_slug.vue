@@ -46,9 +46,7 @@ export default {
       meta: [
         { hid: 'description', name: 'description', content: description },
         { hid: 'og:title', property: 'og:title', content: this.post.fields.title },
-        { hid: 'og:description', property: 'og:description', content: description },
-        { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
-        { hid: 'twitter:image', name: 'twitter:image', content: 'https://mycode.rip/logo.png' }
+        { hid: 'og:description', property: 'og:description', content: description }
       ]
     }
   }
