@@ -28,7 +28,7 @@ module.exports = {
       { hid: 'og:title', property: 'og:title', content: 'MyCode.rip' },
       { hid: 'og:description', property: 'og:description', content: 'Webエンジニアのブログ' },
       { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
-      { hid: 'twitter:image', name: 'twitter:image', content: 'https://mycode.rip/logo.png' }
+      { hid: 'twitter:image', name: 'twitter:image', content: 'https://mycode.rip/twitter_card_summary.jpg' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
