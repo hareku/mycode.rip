@@ -1,12 +1,12 @@
 <template>
   <div>
+    <h1 class="post-head">
+      <nuxt-link :to="{ name: 'slug', params: { slug: post.fields.slug }}" class="post-head__title">{{ post.fields.title }}</nuxt-link>
+    </h1>
+
     <div class="post-date">
       <time :datetime="post.sys.createdAt">{{ displayCreatedAt }}</time>
     </div>
-
-    <h1>
-      <nuxt-link :to="{ name: 'slug', params: { slug: post.fields.slug }}" class="post-title">{{ post.fields.title }}</nuxt-link>
-    </h1>
   </div>
 </template>
 
@@ -34,11 +34,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.post-title {
-  color: inherit;
+.post-head {
+  font-size: 2rem;
+  margin-bottom: 4px;
 
-  &:hover {
-    opacity: 0.8;
+  &__title {
+    color: inherit;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 </style>

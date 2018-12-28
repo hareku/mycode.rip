@@ -44,6 +44,6 @@ export default {
 
 <style lang="scss" scoped>
 .index-post {
-  margin-top: 12px;
+  margin-top: 24px;
 }
 </style>
