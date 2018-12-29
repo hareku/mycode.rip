@@ -9,19 +9,13 @@
     <h1 class="post-title">{{ post.fields.title }}</h1>
 
     <div v-html="renderedContent"></div>
-
-    <hr />
-    <AboutMe/>
   </div>
 </template>
 
 <script>
 import dateformat from 'dateformat'
-import AboutMe from './AboutMe'
 
 export default {
-  components: { AboutMe },
-
   props: {
     post: {
       type: Object,

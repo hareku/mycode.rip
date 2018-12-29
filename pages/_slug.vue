@@ -1,14 +1,25 @@
 <template>
-  <PostContent :post="post" :includes="includes"/>
+  <div>
+    <PostContent :post="post" :includes="includes"/>
+
+    <hr />
+
+    <AboutMe/>
+
+    <div>
+      <nuxt-link :to="{ name: 'index' }">Back to home (/)</nuxt-link>
+    </div>
+  </div>
 </template>
 
 <script>
 import strLimit from '~/utils/str-limit'
 import h2p from 'html2plaintext'
 import PostContent from '~/components/PostContent'
+import AboutMe from '~/components/AboutMe'
 
 export default {
-  components: { PostContent },
+  components: { PostContent, AboutMe },
 
   asyncData ({ app, params, error }) {
     const select = [
