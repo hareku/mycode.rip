@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="profile-head">About me</div>
-    <div class="profile-body">名古屋の自称Webエンジニア</div>
+    <div class="profile-body">{{ aboutMe }}</div>
 
     <ul class="profile-links">
       <li>
@@ -16,6 +16,16 @@
     </ul>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    aboutMe () {
+      return { name: 'hareku', job: 'Web Engineer' }
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .profile-head {
