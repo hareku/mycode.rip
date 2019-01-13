@@ -1,7 +1,13 @@
 <template>
   <div>
-    <div class="profile-head">About me</div>
-    <div class="profile-body">{{ aboutMe }}</div>
+    <h1>Profile</h1>
+    <div class="profile-descriptions">
+      <div>Name: hareku</div>
+      <div>Job: Software Engineer</div>
+      <div>Country: Japan</div>
+    </div>
+
+    <h2>Links</h2>
 
     <ul class="profile-links">
       <li>
@@ -14,29 +20,14 @@
         <a href="https://twitter.com/hareku908" target="_blank" rel="nofollow noreferrer">Twitter @hareku908</a>
       </li>
     </ul>
-
-    <div>
-      <nuxt-link :to="{ name: 'profile' }">More profile...</nuxt-link>
-    </div>
   </div>
 </template>
 
-<script>
-export default {
-  computed: {
-    aboutMe () {
-      return { name: 'hareku', job: 'Web Engineer' }
-    }
-  }
-}
-</script>
-
 <style lang="scss" scoped>
-.profile-head {
-  font-size: 2rem;
-}
-
-.profile-body {
-  margin-top: 6px;
+.profile-descriptions {
+  margin-bottom: 20px;
+  > * {
+    margin-bottom: 8px;
+  }
 }
 </style>

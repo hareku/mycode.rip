@@ -4,11 +4,14 @@
 
     <hr />
 
-    <AboutMe/>
-
     <div>
       <nuxt-link :to="{ name: 'index' }">Back to home (/)</nuxt-link>
     </div>
+
+    <hr />
+
+    <AboutMe/>
+
   </div>
 </template>
 
