@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+
+  node:
+    image: node:8.11
+    tty: true
+    working_dir: /var/www
+    command: yarn run dev
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/var/www
+    environment:
+      - NODE_ENV=development
+      - CTF_SPACE_ID=vrsagmse1qfb
+      - CTF_CDA_ACCESS_TOKEN=5d3d838e7be39328a3f20175aafa937201e308d0bb10498d3283361db3aa1654
+      - HOST=0.0.0.0

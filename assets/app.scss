@@ -63,3 +63,14 @@ code {
 .grey-text {
   color: #abb4b7;
 }
+
+.profile-links {
+  margin-top: 6px;
+  padding-left: 6px;
+  list-style-position: inside;
+  list-style-type: square;
+
+  > li {
+    margin-bottom: 5px;
+  }
+}
