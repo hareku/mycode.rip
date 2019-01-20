@@ -2,16 +2,13 @@
   <div>
     <PostContent :post="post" :includes="includes"/>
 
-    <hr />
-
-    <div>
+    <div class="back-to-home">
       <nuxt-link :to="{ name: 'index' }">Back to home (/)</nuxt-link>
     </div>
 
     <hr />
 
     <AboutMe/>
-
   </div>
 </template>
 
@@ -66,3 +63,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.back-to-home {
+  margin-top: 100px;
+}
+</style>

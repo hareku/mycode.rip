@@ -3,7 +3,7 @@ version: '3'
 services:
 
   node:
-    image: node:8.11
+    image: node:8.11-alpine
     tty: true
     working_dir: /var/www
     command: yarn run dev

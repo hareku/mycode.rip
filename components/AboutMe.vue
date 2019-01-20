@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div class="profile-head">About me</div>
+    <div class="profile-head">
+      <nuxt-link :to="{ name: 'profile' }">About me</nuxt-link>
+    </div>
     <div class="profile-body">{{ aboutMe }}</div>
 
     <ul class="profile-links">
@@ -14,10 +16,6 @@
         <a href="https://twitter.com/hareku908" target="_blank" rel="nofollow noreferrer">Twitter @hareku908</a>
       </li>
     </ul>
-
-    <div>
-      <nuxt-link :to="{ name: 'profile' }">More profile...</nuxt-link>
-    </div>
   </div>
 </template>
 
