@@ -4,12 +4,20 @@
     <div class="profile-descriptions">
       <div>Name: hareku</div>
       <div>Job: Software Engineer</div>
-      <div>Country: Japan</div>
+    </div>
+
+    <h2>Loves</h2>
+    <div class="profile-descriptions">
+      <ul>
+        <li>Go</li>
+        <li>Kubernetes</li>
+        <li>Terraform</li>
+        <li>AWS</li>
+      </ul>
     </div>
 
     <h2>Links</h2>
-
-    <ul class="profile-links">
+    <ul>
       <li>
         <a href="https://qiita.com/hareku" target="_blank" rel="nofollow noreferrer">Qiita @hareku</a>
       </li>
