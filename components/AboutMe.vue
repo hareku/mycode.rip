@@ -5,7 +5,7 @@
     </div>
     <div class="profile-body">{{ aboutMe }}</div>
 
-    <ul class="profile-links">
+    <ul>
       <li>
         <a href="https://qiita.com/hareku" target="_blank" rel="nofollow noreferrer">Qiita @hareku</a>
       </li>
