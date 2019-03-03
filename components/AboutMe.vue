@@ -23,7 +23,7 @@
 export default {
   computed: {
     aboutMe () {
-      return { name: 'hareku', job: 'Web Engineer' }
+      return { name: 'hareku', job: 'Software Engineer' }
     }
   }
 }
