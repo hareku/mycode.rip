@@ -3,7 +3,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - pip install awscli --upgrade --user
+      - pip3 install awscli --upgrade --user
       - npm install -g yarn
   build:
     commands:
