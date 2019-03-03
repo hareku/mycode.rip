@@ -106,5 +106,12 @@ module.exports = {
     cacheTime: 1000 * 60 * 15, // 15 minutes
     generate: true,
     routes: getRoutes
-  }
+  },
+  // for windows
+  // watchers: {
+  //   webpack: {
+  //     aggregateTimeout: 300,
+  //     poll: 1000
+  //   }
+  // }
 }
