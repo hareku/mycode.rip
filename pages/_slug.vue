@@ -2,13 +2,15 @@
   <div>
     <PostContent :post="post" :includes="includes"/>
 
-    <div class="back-to-home">
-      <nuxt-link :to="{ name: 'index' }">Back to home (/)</nuxt-link>
-    </div>
+    <ShareButtons class="page-share-buttons"/>
 
     <hr />
 
     <AboutMe/>
+
+    <div class="back-to-home">
+      <nuxt-link :to="{ name: 'index' }">Back to home (/)</nuxt-link>
+    </div>
   </div>
 </template>
 
@@ -17,9 +19,10 @@ import strLimit from '~/utils/str-limit'
 import h2p from 'html2plaintext'
 import PostContent from '~/components/PostContent'
 import AboutMe from '~/components/AboutMe'
+import ShareButtons from '~/components/ShareButtons'
 
 export default {
-  components: { PostContent, AboutMe },
+  components: { PostContent, AboutMe, ShareButtons },
 
   asyncData ({ app, params, error }) {
     const select = [
@@ -65,7 +68,11 @@ export default {
 </script>
 
 <style>
+.page-share-buttons {
+  margin-top: 70px;
+}
+
 .back-to-home {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 </style>
