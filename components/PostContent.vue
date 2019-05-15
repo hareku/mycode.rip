@@ -8,7 +8,9 @@
 
     <h1 class="post-title">{{ post.fields.title }}</h1>
 
-    <div v-html="renderedContent"></div>
+    <hr >
+
+    <div class="post-body" v-html="renderedContent"></div>
   </div>
 </template>
 
@@ -60,6 +62,10 @@ export default {
 }
 
 .post-title {
-  margin-top: 6px;
+  margin-top: 12px;
+}
+
+.post-body {
+  margin-top: 54px;
 }
 </style>
