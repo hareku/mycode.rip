@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Profile</h1>
+    <h1>About me</h1>
     <div class="profile-descriptions">
       <div>Name: hareku</div>
       <div>Job: Software Engineer</div>
@@ -28,8 +28,25 @@
         <a href="https://twitter.com/hareku908" target="_blank" rel="nofollow noreferrer">Twitter @hareku908</a>
       </li>
     </ul>
+
+    <p>This blog source code is on GitHub (<a href="https://github.com/hareku/mycode.rip" target="_blank" rel="nofollow noopener">hareku/mycode.rip</a>)</p>
+
   </div>
 </template>
+
+<script>
+export default {
+  head () {
+    return {
+      title: 'About me',
+      meta: [
+        { hid: 'og:title', property: 'og:title', content: 'About me' },
+        { hid: 'og:description', property: 'og:description', content: 'About me' }
+      ]
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .profile-descriptions {
