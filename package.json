@@ -15,22 +15,22 @@
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
-    "@nuxtjs/sitemap": "^0.2.0",
+    "@nuxtjs/sitemap": "^2.0.1",
     "contentful": "^7.0.3",
-    "cross-env": "^5.2.0",
+    "cross-env": "^7.0.1",
     "dateformat": "^3.0.3",
     "html2plaintext": "^2.0.1",
-    "markdown-it": "^8.4.2",
+    "markdown-it": "^10.0.0",
     "node-sass": "^4.9.3",
     "nuxt": "^2.2.0",
     "s3-safety-deploy": "^0.2.2",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^8.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
+    "eslint": "^6.8.0",
     "eslint-friendly-formatter": "^4.0.1",
-    "eslint-loader": "^2.1.1",
-    "eslint-plugin-vue": "^5.0.0"
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-vue": "^6.2.1"
   }
 }
