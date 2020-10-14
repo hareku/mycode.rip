@@ -37,6 +37,10 @@ module.exports = {
       { rel: 'stylesheet', type: 'text/css', href: 'https://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css' }
     ]
   },
+  /**
+   * Full static mode
+   */
+  target: 'static',
   /*
   ** Customize the progress bar color
   */
@@ -104,7 +108,6 @@ module.exports = {
   sitemap: {
     hostname: 'https://mycode.rip',
     cacheTime: 1000 * 60 * 15, // 15 minutes
-    generate: true,
     routes: getRoutes
   },
   // for windows
