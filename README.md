@@ -2,7 +2,7 @@
 
 - Blog: https://mycode.rip/
 - Qiita: https://qiita.com/hareku/items/acd9dfe5d77293a4a6d9
-- MyCode.rip(Terraform): https://github.com/hareku/mycode.rip-terraform
+- Terraform project: https://github.com/hareku/mycode.rip-terraform
 
 ## Build Setup
 
