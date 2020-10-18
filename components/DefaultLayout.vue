@@ -2,7 +2,7 @@
   <div class="app-container">
     <header>
       <div class="site-title">
-        <nuxt-link :to="{ name: 'index' }" exact class="site-title__link">MyCode.rip</nuxt-link>
+        <nuxt-link :to="{ name: 'index' }" exact class="site-title__link">mycode.rip</nuxt-link>
       </div>
       <div class="site-description grey-text">Webエンジニアのブログ</div>
     </header>

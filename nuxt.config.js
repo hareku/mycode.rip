@@ -18,14 +18,14 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'MyCode.rip',
-    titleTemplate: '%s | MyCode.rip',
+    title: 'mycode.rip',
+    titleTemplate: '%s | mycode.rip',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'google-site-verification', content: 'TeBuCNCTOyUHjtIq4eNw5aiyr0a86CB4Ikpqr4m4nrk' },
       { hid: 'description', name: 'description', content: 'Webエンジニアのブログ' },
-      { hid: 'og:title', property: 'og:title', content: 'MyCode.rip' },
+      { hid: 'og:title', property: 'og:title', content: 'mycode.rip' },
       { hid: 'og:description', property: 'og:description', content: 'Webエンジニアのブログ' },
       { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
       { hid: 'twitter:image', name: 'twitter:image', content: 'https://mycode.rip/twitter_card_summary.jpg' }
