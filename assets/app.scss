@@ -1,3 +1,7 @@
+body {
+  color: #333;
+}
+
 h1 {
   font-size: 2.6rem
 }
@@ -60,10 +64,6 @@ code {
   white-space: normal;
 }
 
-.grey-text {
-  color: #abb4b7;
-}
-
 ul {
   margin-top: 6px;
   padding-left: 6px;
@@ -71,4 +71,12 @@ ul {
   > li {
     margin-bottom: 5px;
   }
+}
+
+a, a:visited {
+  color: #006bee;
+}
+
+.grey-text {
+  color: #8e9a9e;
 }

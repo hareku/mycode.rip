@@ -8,16 +8,14 @@
     </header>
 
     <main class="main">
-      <div class="content">
-        <slot/>
-      </div>
+      <slot/>
     </main>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .app-container {
-  max-width: 1000px;
+  max-width: 720px;
   margin-right: auto;
   margin-left: auto;
   padding: 20px;
@@ -46,11 +44,5 @@
 
 .main {
   margin-top: 30px;
-}
-
-.content {
-  max-width: 800px;
-  margin-right: auto;
-  margin-left: auto;
 }
 </style>
