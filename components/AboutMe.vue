@@ -14,19 +14,19 @@
 const LINKS = [
   {
     url: 'https://twitter.com/hareku908',
-    text: 'Twitter'
+    text: 'Twitter @hareku908'
   },
   {
     url: 'https://github.com/hareku',
-    text: 'GitHub'
+    text: 'GitHub @hareku'
   },
   {
     url: 'https://atcoder.jp/users/hareku',
-    text: 'AtCoder'
+    text: 'AtCoder @hareku'
   },
   {
     url: 'https://qiita.com/hareku',
-    text: 'Qiita'
+    text: 'Qiita @hareku'
   }
 ]
 
