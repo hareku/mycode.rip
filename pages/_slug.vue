@@ -3,10 +3,6 @@
     <PostContent :post="post" :includes="includes"/>
 
     <ShareButtons class="page-share-buttons" :share-text="post.fields.title" />
-
-    <hr />
-
-    <AboutMe/>
   </div>
 </template>
 
@@ -14,11 +10,10 @@
 import strLimit from '~/utils/str-limit'
 import h2p from 'html2plaintext'
 import PostContent from '~/components/PostContent'
-import AboutMe from '~/components/AboutMe'
 import ShareButtons from '~/components/ShareButtons'
 
 export default {
-  components: { PostContent, AboutMe, ShareButtons },
+  components: { PostContent, ShareButtons },
 
   asyncData ({ app, params, error }) {
     const select = [

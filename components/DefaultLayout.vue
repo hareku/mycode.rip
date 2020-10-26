@@ -9,9 +9,21 @@
 
     <main class="main">
       <slot/>
+
+      <hr />
+      <AboutMe/>
+      <p>This blog's source code is published on <a href="https://github.com/hareku/mycode.rip" target="_blank" rel="nofollow noreferrer">GitHub</a>.</p>
     </main>
   </div>
 </template>
+
+<script>
+import AboutMe from '~/components/AboutMe'
+
+export default {
+  components: { AboutMe },
+}
+</script>
 
 <style lang="scss" scoped>
 .app-container {

@@ -1,18 +1,14 @@
 <template>
   <div>
     <IndexPost v-for="post in posts" :key="post.sys.id" :post="post" class="index-post"/>
-
-    <hr />
-    <AboutMe/>
   </div>
 </template>
 
 <script>
 import IndexPost from '~/components/IndexPost'
-import AboutMe from '~/components/AboutMe'
 
 export default {
-  components: { IndexPost, AboutMe },
+  components: { IndexPost },
 
   asyncData ({ app }) {
     const select = [
