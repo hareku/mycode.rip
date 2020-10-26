@@ -1,40 +1,28 @@
 <template>
   <div>
-    <div class="profile-head">
-      <nuxt-link :to="{ name: 'profile' }">About me</nuxt-link>
-    </div>
-    <div class="profile-body">{{ aboutMe }}</div>
+    <div class="profile-head">About me</div>
 
     <ul>
       <li>
-        <a href="https://qiita.com/hareku" target="_blank" rel="nofollow noreferrer">Qiita @hareku</a>
+        <a href="https://twitter.com/hareku908" target="_blank" rel="nofollow noreferrer">Twitter @hareku908</a>
       </li>
       <li>
         <a href="https://github.com/hareku" target="_blank" rel="nofollow noreferrer">GitHub @hareku</a>
       </li>
       <li>
-        <a href="https://twitter.com/hareku908" target="_blank" rel="nofollow noreferrer">Twitter @hareku908</a>
+        <a href="https://qiita.com/hareku" target="_blank" rel="nofollow noreferrer">Qiita @hareku</a>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
-export default {
-  computed: {
-    aboutMe () {
-      return { name: 'hareku', job: 'Software Engineer' }
-    }
-  }
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>
 .profile-head {
   font-size: 2rem;
-}
-
-.profile-body {
-  margin-top: 6px;
+  font-weight: bold;
 }
 </style>

@@ -7,10 +7,6 @@
     <hr />
 
     <AboutMe/>
-
-    <div class="back-to-home">
-      <nuxt-link :to="{ name: 'index' }">Back to home (/)</nuxt-link>
-    </div>
   </div>
 </template>
 
@@ -70,9 +66,5 @@ export default {
 <style>
 .page-share-buttons {
   margin-top: 70px;
-}
-
-.back-to-home {
-  margin-top: 60px;
 }
 </style>
