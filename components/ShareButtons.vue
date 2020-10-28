@@ -2,7 +2,7 @@
   <client-only>
     <div class="share-buttons">
       <div>
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" :data-text="shareText" data-related="hareku908" data-show-count="false">Tweet</a>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-related="hareku908" data-show-count="false">Tweet</a>
       </div>
 
       <div>
@@ -16,13 +16,6 @@
 
 <script>
 export default {
-  props: {
-    shareText: {
-      type: String,
-      required: true
-    }
-  },
-
   mounted() {
     const links = [
       'https://platform.twitter.com/widgets.js',

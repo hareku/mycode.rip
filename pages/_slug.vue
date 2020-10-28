@@ -2,7 +2,7 @@
   <div>
     <PostContent :post="post" :includes="includes"/>
 
-    <ShareButtons class="page-share-buttons" :share-text="post.fields.title" />
+    <ShareButtons class="page-share-buttons"/>
   </div>
 </template>
 
