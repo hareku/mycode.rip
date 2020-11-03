@@ -14,6 +14,7 @@
     "deploy": "s3-safety-deploy --bucket mycode.rip --uploadDir ./dist --deletePattern *.html"
   },
   "dependencies": {
+    "@nuxtjs/amp": "^0.4.0",
     "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/sitemap": "^2.0.1",
     "@nuxtjs/vercel-builder": "^0.17.12",

@@ -65,6 +65,7 @@ module.exports = {
     ['@nuxtjs/google-analytics', {
       id: 'UA-58539185-8'
     }],
+    '@nuxtjs/amp',
     '@nuxtjs/sitemap'
   ],
   /*
