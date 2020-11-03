@@ -16,6 +16,7 @@
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/sitemap": "^2.0.1",
+    "@nuxtjs/vercel-builder": "^0.17.12",
     "contentful": "^7.0.3",
     "cross-env": "^7.0.1",
     "dateformat": "^3.0.3",
