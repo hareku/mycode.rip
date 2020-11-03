@@ -1,8 +1,6 @@
-# Blog - Nuxt.js + Contentful
+# Blog: powerd by Nuxt.js & Contentful & Vercel
 
-- Blog: https://mycode.rip/
-- Qiita: https://qiita.com/hareku/items/acd9dfe5d77293a4a6d9
-- Terraform project: https://github.com/hareku/mycode.rip-terraform
+Blog's URL: [https://mycode.rip](https://mycode.rip/)
 
 ## Development
 
