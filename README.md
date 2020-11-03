@@ -12,7 +12,7 @@
 # install dependencies
 $ yarn install
 
-# develop without docker
+# serve with hot reload at localhost:3000 after a few seconds later
 $ yarn run dev
 ```
 
