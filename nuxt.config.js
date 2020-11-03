@@ -11,6 +11,10 @@ const getRoutes = () => {
     .then(({ items }) => {
       return items.map(post => `/${post.fields.slug}`)
     })
+    .then(routes => {
+      routes.push('/')
+      return routes
+    })
 }
 
 module.exports = {
