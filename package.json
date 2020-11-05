@@ -6,9 +6,9 @@
   "private": true,
   "scripts": {
     "dev": "env-cmd nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
+    "build": "env-cmd nuxt build",
+    "start": "env-cmd nuxt start",
+    "generate": "env-cmd nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix .",
     "precommit": "npm run lint"
   },
@@ -16,7 +16,6 @@
     "@nuxtjs/amp": "^0.4.0",
     "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/sitemap": "^2.0.1",
-    "@nuxtjs/vercel-builder": "^0.17.12",
     "contentful": "^7.0.3",
     "dateformat": "^3.0.3",
     "html2plaintext": "^2.0.1",

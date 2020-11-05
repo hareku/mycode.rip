@@ -11,10 +11,6 @@ const getRoutes = () => {
     .then(({ items }) => {
       return items.map(post => `/${post.fields.slug}`)
     })
-    .then(routes => {
-      routes.push('/')
-      return routes
-    })
 }
 
 module.exports = {
@@ -68,6 +64,10 @@ module.exports = {
     '@nuxtjs/amp',
     '@nuxtjs/sitemap'
   ],
+  /*
+  ** full static
+  */
+  target: 'static',
   /*
   ** env
   */
