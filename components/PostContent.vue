@@ -4,9 +4,9 @@
 
     <div>Posted: <time :datetime="post.sys.createdAt">{{ displayCreatedAt }}</time></div>
 
-    <hr >
+    <hr class="post-top-hr" >
 
-    <div class="post-body" v-html="renderedContent"></div>
+    <div v-html="renderedContent"></div>
   </div>
 </template>
 
@@ -38,7 +38,8 @@ export default {
   margin-bottom: 12px;
 }
 
-.post-body {
-  margin-top: 54px;
+.post-top-hr {
+  margin-top: 16px;
+  margin-bottom: 28px;
 }
 </style>
