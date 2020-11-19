@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PostContent :post="post" :includes="includes"/>
+    <PostContent :post="post" />
 
     <ShareButtons class="page-share-buttons"/>
   </div>
@@ -21,7 +21,6 @@ export default {
       'fields.title',
       'fields.slug',
       'fields.content',
-      'fields.category',
     ]
 
     return app.$contentful.getEntries({
@@ -29,14 +28,13 @@ export default {
         select: select.join(','),
         'fields.slug': params.slug,
         limit: 1
-      }).then(({ items, includes }) => {
+      }).then(({ items }) => {
         if (items.length === 0) {
           return error({ statusCode: 404 })
         }
 
         return {
-          post: items[0],
-          includes
+          post: items[0]
         }
       }).catch(error => {
         return error({ statusCode: 500 })
