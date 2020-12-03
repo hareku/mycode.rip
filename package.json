@@ -17,12 +17,12 @@
     "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/sitemap": "^2.0.1",
     "contentful": "^7.0.3",
-    "dateformat": "^3.0.3",
+    "dateformat": "^4.0.0",
     "html2plaintext": "^2.0.1",
-    "markdown-it": "^10.0.0",
-    "node-sass": "^4.9.3",
+    "markdown-it": "^12.0.2",
+    "node-sass": "^5.0.0",
     "nuxt": "^2.2.0",
-    "sass-loader": "^8.0.2"
+    "sass-loader": "^10.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
