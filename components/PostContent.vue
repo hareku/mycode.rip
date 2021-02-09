@@ -2,7 +2,7 @@
   <div>
     <h1 class="post-title">{{ post.fields.title }}</h1>
 
-    <div>Posted: <time :datetime="post.sys.createdAt">{{ displayCreatedAt }}</time></div>
+    <div>Posted at <time :datetime="post.sys.createdAt">{{ displayCreatedAt }}</time></div>
 
     <hr class="post-top-hr" >
 
