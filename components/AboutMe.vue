@@ -13,10 +13,6 @@
 <script>
 const LINKS = [
   {
-    url: 'https://twitter.com/hareku908',
-    text: 'Twitter @hareku908'
-  },
-  {
     url: 'https://github.com/hareku',
     text: 'GitHub @hareku'
   },
@@ -24,10 +20,6 @@ const LINKS = [
     url: 'https://atcoder.jp/users/hareku',
     text: 'AtCoder @hareku'
   },
-  {
-    url: 'https://qiita.com/hareku',
-    text: 'Qiita @hareku'
-  }
 ]
 
 export default {
