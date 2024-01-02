@@ -18,7 +18,7 @@
           <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" />
         </a>
       </div>
-      <p>This blog's source code is published on <a href="https://github.com/hareku/mycode.rip" target="_blank" rel="nofollow noreferrer">GitHub</a>.</p>
+      <p>The source code of this blog is published on <a href="https://github.com/hareku/mycode.rip" target="_blank" rel="nofollow noreferrer">GitHub</a>.</p>
     </main>
   </div>
 </template>
