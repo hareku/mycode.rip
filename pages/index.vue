@@ -38,7 +38,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .index-post {
   margin-top: 24px;
 }

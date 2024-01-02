@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .app-container {
   max-width: 720px;
   margin-right: auto;
@@ -44,15 +44,15 @@ export default {
   line-height: 1.3;
   font-weight: bold;
   text-align: center;
+}
 
-  &__link {
-    color: inherit;
-    opacity: 1;
+.site-title__link {
+  color: inherit;
+  opacity: 1;
+}
 
-    &:hover {
-      opacity: .9;
-    }
-  }
+.site-title__link:hover {
+  opacity: .9;
 }
 
 .site-description {

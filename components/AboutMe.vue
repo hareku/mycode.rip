@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .profile-head {
   font-size: 2rem;
   font-weight: bold;

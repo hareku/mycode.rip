@@ -35,14 +35,14 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .share-buttons {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+}
 
-  > * {
-    margin-right: 6px;
-  }
+.share-buttons > * {
+  margin-right: 6px;
 }
 </style>

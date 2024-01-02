@@ -20,9 +20,7 @@
     "dateformat": "^4.0.0",
     "html2plaintext": "^2.0.1",
     "markdown-it": "^12.0.2",
-    "node-sass": "^5.0.0",
-    "nuxt": "^2.2.0",
-    "sass-loader": "^10.1.0"
+    "nuxt": "^2.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

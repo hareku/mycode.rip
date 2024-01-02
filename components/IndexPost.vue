@@ -33,17 +33,17 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .post-head {
   font-size: 2rem;
   margin-bottom: 4px;
+}
 
-  &__title {
-    color: inherit;
+.post-head__title {
+  color: inherit;
+}
 
-    &:hover {
-      opacity: 0.8;
-    }
-  }
+.post-head__title:hover {
+  opacity: 0.8;
 }
 </style>

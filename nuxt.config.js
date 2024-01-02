@@ -52,7 +52,7 @@ module.exports = {
   ** CSS
   */
   css: [
-    { src: '~assets/app.scss', lang: 'scss' },
+    { src: '~assets/app.css' },
   ],
   /*
   ** modules

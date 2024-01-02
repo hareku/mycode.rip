@@ -33,7 +33,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .post-title {
   margin-bottom: 12px;
 }
